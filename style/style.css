@@ -1,10 +1,32 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #d3d3d3;
+    background-color: #bf9bde;
     box-sizing: border-box;
 }
-
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+.ponto{
+    margin-left: 0.5em;
+}
+.button_toca_som{
+    background-color: #7f00b2;
+    padding: 0.2em 2em;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.button_toca_som:active{
+    background-color: #8000b2c0;
+}
+.cabecalho__usuarios__dados{
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+}
 .container{
  border: 1px solid #c6c6c6;
  background-color:#7f00b2;
@@ -12,15 +34,15 @@ body{
  display: flex;
  flex-direction: column;
  justify-content: center;
- margin: 80px auto;
- width: 390px;
+ margin:0 auto;
+ width: 380px;
 }
 
 .container__lista{
     background-image: url("../image/bg-button.svg");
     background-position: center;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 70px;
     border-radius: 40%;
 }
 
