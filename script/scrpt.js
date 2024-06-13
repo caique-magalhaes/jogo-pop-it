@@ -13,7 +13,7 @@ let valueRandom = showRandom()
 let numbersRandom = []
 let n = 0
 let contador = null
-let tempoInicial = 60;
+let tempoInicial = 10;
 const audio__ponto = new Audio("./music/ponto.mp3")
 const audio__errou = new Audio("./music/errou.wav")
 const audio_thema = new Audio("./music/thema.mp3")
@@ -68,8 +68,10 @@ bolinhas.forEach((bolinha)=>{
 function diminuindoTempo(){
     if(tempoInicial === 0){
         limpaIntervalo()
-        ponto = 0;
-        tempoInicial = 60
+        localStorage.setItem('ponto', ponto)
+        window.location.href='../pages/finish.html'
+        // ponto = 0;
+        // tempoInicial = 60
     }
     tempoInicial-=1
     showTime();
