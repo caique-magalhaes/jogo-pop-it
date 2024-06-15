@@ -14,7 +14,7 @@ let numbersRandom = []
 let n = 0
 let contador = null
 let tempoInicial = 60;
-const audio__ponto = new Audio("./music/ponto.mp3")
+const audio__ponto = new Audio("./music/tap.mp3")
 const audio__errou = new Audio("./music/errou.wav")
 const audio_thema = new Audio("./music/thema.mp3")
 
@@ -42,23 +42,27 @@ const decrementar = setInterval(diminuindoTempo,1000)
 
 container.addEventListener('click',(event)=>{
     if((event.target == container) || (event.target == linha1) || (event.target == linha2)||(event.target == linha3) ){
-        audio__errou.play()
+        ponto -= 5;
+        pontuacao.textContent = ponto
+        audio__errou.play();
     }
     
 })
 
 bolinhas.forEach((bolinha)=>{
     bolinha.addEventListener('click',()=>{   
+        audio__ponto.play()
         if (bolinha.classList[1]==='container__lista--ativado'){
             bolinha.classList.remove('container__lista--ativado')
             n++  
             if(n % 3 === 0){
-            showBall();
-            audio__ponto.play();
-            ponto += 5;
-            pontuacao.textContent = ponto
+                showBall();
+                ponto += 5;
+                pontuacao.textContent = ponto
             }
         }else{
+            ponto -= 5;
+            pontuacao.textContent = ponto
             audio__errou.play()
         }
     }) 

@@ -5,4 +5,8 @@ const mostrar_pontos = document.querySelector('.pontos')
 
 mostrar_pontos.textContent = localStorage.getItem('ponto')
 
-continuar.addEventListener('click', ()=>window.location.href='../index.html')
+continuar.addEventListener('click', ()=>
+    {
+        audio__ponto.play()
+        window.location.href='../index.html'
+    })
