@@ -73,7 +73,7 @@ function diminuindoTempo(){
     if(tempoInicial === 0){
         limpaIntervalo()
         localStorage.setItem('ponto', ponto)
-        window.location.href='./pages/finish.html'
+        window.location.href='main/pages/finish.html'
         // ponto = 0;
         // tempoInicial = 60
     }
