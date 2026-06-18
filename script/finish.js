@@ -8,5 +8,5 @@ mostrar_pontos.textContent = localStorage.getItem('ponto')
 continuar.addEventListener('click', ()=>
     {
         audio__ponto.play()
-        window.location.href='main/index.html'
+        window.location.href='/main/index.html'
     })
