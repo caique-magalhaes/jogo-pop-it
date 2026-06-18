@@ -10,7 +10,7 @@ An interactive, responsive single-page web game replicating the popular "Pop It"
 ## 🛠️ Tech Stack
 *   **Core Logic:** JavaScript (ES6+ Vanilla DOM Manipulation)
 *   **Structure:** HTML5 Semantic Layouts
-*   **Styling & Animation:** CSS3 (Flexbox, custom keyframes, and smooth transition properties)
+*   **Styling & Animation:** CSS3 (Flexbox, and smooth transition properties)
 *   **Media Assets:** Integrated sound effects and localized image assets
 
 ---
