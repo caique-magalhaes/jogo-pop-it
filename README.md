@@ -5,7 +5,6 @@ An interactive, responsive single-page web game replicating the popular "Pop It"
 ## 🚀 Live Demo
 🎮 **Play the game instantly here:** [caique-magalhaes.github.io/jogo-pop-it/](https://caique-magalhaes.github.io/jogo-pop-it/)
 
----
 
 ## 🛠️ Tech Stack
 *   **Core Logic:** JavaScript (ES6+ Vanilla DOM Manipulation)
@@ -13,7 +12,6 @@ An interactive, responsive single-page web game replicating the popular "Pop It"
 *   **Styling & Animation:** CSS3 (Flexbox, and smooth transition properties)
 *   **Media Assets:** Integrated sound effects and localized image assets
 
----
 
 ## 💻 Local Setup & Development
 
